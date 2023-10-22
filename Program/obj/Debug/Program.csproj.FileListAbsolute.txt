@@ -1,0 +1,6 @@
+D:\Programming\C#\ООП\laba_2\Task_5\Program\Program\bin\Debug\Program.exe
+D:\Programming\C#\ООП\laba_2\Task_5\Program\Program\bin\Debug\Program.pdb
+D:\Programming\C#\ООП\laba_2\Task_5\Program\Program\obj\Debug\Program.csproj.AssemblyReference.cache
+D:\Programming\C#\ООП\laba_2\Task_5\Program\Program\obj\Debug\Program.csproj.CoreCompileInputs.cache
+D:\Programming\C#\ООП\laba_2\Task_5\Program\Program\obj\Debug\Program.exe
+D:\Programming\C#\ООП\laba_2\Task_5\Program\Program\obj\Debug\Program.pdb
