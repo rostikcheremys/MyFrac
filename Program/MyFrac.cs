@@ -14,7 +14,11 @@ namespace Program
             {
                 _pointer = 1;
             }
-          
+            else
+            {
+                _pointer = 0;
+            }
+            
             if (n != 0)
             {
                 long divider = BiggestDivider(Math.Abs(n), Math.Abs(d));
@@ -68,11 +72,6 @@ namespace Program
 
         public double DoubleValue()
         {
-            if (_pointer == 1)
-            {
-                return -(Convert.ToDouble(_numerator) / Convert.ToDouble(_denominator));
-            }
-            
             return Convert.ToDouble(_numerator) / Convert.ToDouble(_denominator);
         }
 
