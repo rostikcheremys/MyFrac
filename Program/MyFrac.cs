@@ -10,29 +10,28 @@ namespace Program
 
         public MyFrac(long n, long d)
         {
-            if ((n < 0 && d > 0) || (n > 0 && d < 0))
+            if (n == 0)
+            {
+                _numerator = 0;
+                _denominator = 1;
+                _pointer = 0;
+            }
+            else if ((n < 0 && d > 0) || (n > 0 && d < 0))
             {
                 _pointer = 1;
+                long divider = BiggestDivider(Math.Abs(n), Math.Abs(d));
+                _numerator = -Math.Abs(n) / divider;
+                _denominator = Math.Abs(d) / divider;
             }
             else
             {
                 _pointer = 0;
-            }
-            
-            if (n != 0)
-            {
                 long divider = BiggestDivider(Math.Abs(n), Math.Abs(d));
-                
-                _numerator = n / divider;
-                _denominator = d / divider;
-            }
-            else
-            {
-                _numerator = n;
-                _denominator = d;
+                _numerator = Math.Abs(n) / divider;
+                _denominator = Math.Abs(d) / divider;
             }
         }
-
+        
         private long BiggestDivider(long numerator, long denominator)
         {
             while (denominator != numerator)
