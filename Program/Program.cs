@@ -19,8 +19,8 @@ namespace Program
 
             CheckLength(firstFraction);
             
-            int firstNumerator = int.Parse(firstFraction[0]);
-            int firstDenominator = int.Parse(firstFraction[1]);
+            int firstNumerator = Convert.ToInt32(firstFraction[0]);
+            int firstDenominator = Convert.ToInt32(firstFraction[1]);
             
             MyFrac fracOfFirst = new MyFrac(firstNumerator, firstDenominator);
             
@@ -29,8 +29,8 @@ namespace Program
             
             CheckLength(secondFraction);
 
-            int secondNumerator = int.Parse(secondFraction[0]);
-            int secondDenominator = int.Parse(secondFraction[1]);
+            int secondNumerator = Convert.ToInt32(secondFraction[0]);
+            int secondDenominator = Convert.ToInt32(secondFraction[1]);
             
             MyFrac fracOfSecond = new MyFrac(secondNumerator, secondDenominator);
             
